@@ -30,6 +30,7 @@ body {
   overflow-x: hidden;
   position: relative;
   background-color: #121212;
+  color: #fff;
 }
 
 .App {
