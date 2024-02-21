@@ -1,7 +1,13 @@
-import React from "react";
+import { Container, Row, Col } from "react-bootstrap";
 
-const Banner = () => {
-  return <div>Banner</div>;
+export const Banner = () => {
+  return (
+    <section className="banner" id="home">
+      <Container>
+        <Row>
+          <Col xs={12}>Banner</Col>
+        </Row>
+      </Container>
+    </section>
+  );
 };
-
-export default Banner;
