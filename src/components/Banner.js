@@ -21,6 +21,9 @@ export const Banner = () => {
               Let's connect
             </button>
           </Col>
+          <Col xs={12} md={6} xl={7}>
+            <ArrowRightCircle />
+          </Col>
         </Row>
       </Container>
     </section>
