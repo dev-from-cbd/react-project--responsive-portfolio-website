@@ -1,4 +1,5 @@
 import { Container, Row, Col } from "react-bootstrap";
+import headerImg from "../assets/img/header-img.svg";
 import { ArrowRightCircle } from "react-bootstrap-icons";
 
 export const Banner = () => {
@@ -21,8 +22,11 @@ export const Banner = () => {
               Let's connect
             </button>
           </Col>
-          <Col xs={12} md={6} xl={7}>
-            <ArrowRightCircle />
+          <Col xs={12} md={6} xl={5}>
+            <img src={headerImg} alt="Header Image" />
+            <a href="#">
+              <ArrowRightCircle />
+            </a>
           </Col>
         </Row>
       </Container>
