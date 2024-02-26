@@ -14,9 +14,12 @@ export const Banner = () => {
               <span className="wrap">Web developer!!</span>
             </h1>
             <p>
-              Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem
-              Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum
-              Lorem Ipsum Lorem Ipsum Lorem Ipsum
+              Welcome to my React developer portfolio! I'm passionate about
+              crafting engaging user experiences and building scalable web
+              applications with React.js. With expertise in front-end
+              development and a keen eye for design, I strive to create clean,
+              efficient, and intuitive interfaces. Let's collaborate and bring
+              your ideas to life!
             </p>
             <button onClick={() => console.log("connect")}>
               Let's connect
