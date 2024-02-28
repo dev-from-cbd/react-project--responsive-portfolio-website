@@ -3,29 +3,31 @@
   font-family: Centra;
   src: url("./assets/font/CentraNo2-Bold.ttf");
   font-weight: 700;
-}
+} /* Define custom font Centra with bold weight */
+
 @font-face {
   font-family: Centra;
   src: url("./assets/font/CentraNo2-Medium.ttf");
   font-weight: 500;
-}
+} /* Define custom font Centra with medium weight */
+
 @font-face {
   font-family: Centra;
   src: url("./assets/font/CentraNo2-Book.ttf");
   font-weight: 400;
-}
+} /* Define custom font Centra with book (regular) weight */
 
 /************ Default CSS ************/
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-}
+} /* Reset margin, padding, and box-sizing for all elements */
 
 html {
   scroll-behavior: smooth;
   scroll-padding-top: 75px;
-}
+} /* Enable smooth scrolling and set padding top for scroll */
 
 body {
   font-weight: 400;
@@ -34,7 +36,7 @@ body {
   background-color: #121212 !important;
   color: #fff !important;
   font-family: "Centra", sans-serif !important;
-}
+} /* Style body element */
 
 h1,
 h2,
@@ -45,7 +47,7 @@ h6 {
   margin: 0;
   padding: 0;
   line-height: normal;
-}
+} /* Reset margin, padding, and line-height for heading elements */
 
 p,
 a,
@@ -56,42 +58,42 @@ ul {
   padding: 0;
   line-height: normal;
   text-decoration: none;
-}
+} /* Reset margin, padding, and line-height for paragraph, anchor, list, button, and unordered list elements */
 
 a:hover {
   text-decoration: none;
-}
+} /* Remove underline on anchor hover */
 
 img {
   width: 100%;
   height: auto;
-}
+} /* Ensure images are responsive */
 
 button {
   border: 0;
   background-color: transparent;
-}
+} /* Remove default button styles */
 
 input:focus,
 textarea:focus,
 select:focus {
   outline: none;
-}
+} /* Remove outline on focus for input, textarea, and select elements */
 
 @media (min-width: 1700px) {
   main .container {
     max-width: 100%;
     padding: 0 150px;
-  }
+  } /* Adjust container width and padding for larger screens */
 }
 
 p.success {
   color: green;
-}
+} /* Style paragraphs with success class */
 
 p.danger {
   color: red;
-}
+} /* Style paragraphs with danger class */
 
 /************ Navbar CSS ************/
 nav.navbar {
@@ -101,14 +103,17 @@ nav.navbar {
   top: 0;
   z-index: 9999;
   transition: 0.32s ease-in-out;
-}
+} /* Style navbar */
+
 nav.navbar.scrolled {
   padding: 0px 0;
   background-color: #121212;
-}
+} /* Style navbar when scrolled */
+
 nav.navbar a.navbar-brand {
   width: 9%;
-}
+} /* Style navbar brand */
+
 nav.navbar .navbar-nav .nav-link.navbar-link {
   font-weight: 400;
   color: #fff !important;
@@ -117,18 +122,22 @@ nav.navbar .navbar-nav .nav-link.navbar-link {
   font-size: 18px;
   opacity: 0.75;
 }
+
 nav.navbar .navbar-nav a.nav-link.navbar-link:hover,
 nav.navbar .navbar-nav a.nav-link.navbar-link.active {
   opacity: 1;
 }
+
 span.navbar-text {
   display: flex;
   align-items: center;
 }
+
 .social-icon {
   display: inline-block;
   margin-left: 14px;
 }
+
 .social-icon a {
   width: 42px;
   height: 42px;
@@ -141,6 +150,7 @@ span.navbar-text {
   line-height: 1;
   border: 1px solid rgba(255, 255, 255, 0.5);
 }
+
 .social-icon a::before {
   content: "";
   width: 42px;
@@ -151,9 +161,11 @@ span.navbar-text {
   transform: scale(0);
   transition: 0.3s ease-in-out;
 }
+
 .social-icon a:hover::before {
   transform: scale(1);
 }
+
 .social-icon a img {
   width: 40%;
   z-index: 1;
