@@ -1,3 +1,5 @@
+import { useState, useEffect } from "react";
+
 // Importing necessary components from react-bootstrap library
 import { Container, Row, Col } from "react-bootstrap";
 
@@ -9,6 +11,9 @@ import { ArrowRightCircle } from "react-bootstrap-icons";
 
 // Defining Banner component as a functional component
 export const Banner = () => {
+
+const toRotate = 
+
   // Returning JSX for the Banner component
   return (
     // Section element with className "banner" and id "home"
