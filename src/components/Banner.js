@@ -12,7 +12,7 @@ import { ArrowRightCircle } from "react-bootstrap-icons";
 // Defining Banner component as a functional component
 export const Banner = () => {
 
-const toRotate = 
+const toRotate = ['Web Developer', 'UX/UI Expert', 'Front End Programmer']
 
   // Returning JSX for the Banner component
   return (
