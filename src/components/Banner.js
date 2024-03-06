@@ -12,8 +12,9 @@ import { ArrowRightCircle } from "react-bootstrap-icons";
 // Defining Banner component as a functional component
 export const Banner = () => {
   const [loopNum, setLoopNum] = useState(0);
-  const [isDeleting, setIsDeliting] = useState(false);
+  const [isDeleting, setIsDeleting] = useState(false);
   const toRotate = ["Web Developer", "UX/UI Expert", "Front End Programmer"];
+  const [text, setText] = useState("");
 
   // Returning JSX for the Banner component
   return (
