@@ -15,6 +15,7 @@ export const Banner = () => {
   const [isDeleting, setIsDeleting] = useState(false);
   const toRotate = ["Web Developer", "UX/UI Expert", "Front End Programmer"];
   const [text, setText] = useState("");
+  const period = 200;
 
   // Returning JSX for the Banner component
   return (
