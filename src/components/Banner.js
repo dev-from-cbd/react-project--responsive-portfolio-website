@@ -3,11 +3,11 @@ import { useState, useEffect } from "react";
 // Importing necessary components from react-bootstrap library
 import { Container, Row, Col } from "react-bootstrap";
 
-// Importing headerImg from the specified path
-import headerImg from "../assets/img/header-img.svg";
-
 // Importing ArrowRightCircle icon from react-bootstrap-icons library
 import { ArrowRightCircle } from "react-bootstrap-icons";
+
+// Importing headerImg from the specified path
+import headerImg from "../assets/img/header-img.svg";
 
 // Defining Banner component as a functional component
 export const Banner = () => {
@@ -15,7 +15,13 @@ export const Banner = () => {
   const [isDeleting, setIsDeleting] = useState(false);
   const toRotate = ["Web Developer", "UX/UI Expert", "Front End Programmer"];
   const [text, setText] = useState("");
-  const period = 200;
+  const period = 2000;
+
+  useEffect(() => {
+    let ticker = setInterval(() => {
+
+    }, )
+  })
 
   // Returning JSX for the Banner component
   return (
