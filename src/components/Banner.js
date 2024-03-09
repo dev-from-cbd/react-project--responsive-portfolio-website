@@ -15,13 +15,18 @@ export const Banner = () => {
   const [isDeleting, setIsDeleting] = useState(false);
   const toRotate = ["Web Developer", "UX/UI Expert", "Front End Programmer"];
   const [text, setText] = useState("");
+  const [delta, setDelta] = useState(300 - Math.random() * 100);
   const period = 2000;
 
   useEffect(() => {
-    let ticker = setInterval(() => {
+    const ticker = setInterval(() => {
+      setDelta(300 - Math.random() * 100); // Changing the state of delta
+    }, period);
 
-    }, )
-  })
+    return () => {
+      clearInterval(ticker); // Clearing the interval on unmount
+    };
+  }, [period]);
 
   // Returning JSX for the Banner component
   return (
