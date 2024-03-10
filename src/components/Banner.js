@@ -1,32 +1,38 @@
 import { useState, useEffect } from "react";
-
-// Importing necessary components from react-bootstrap library
 import { Container, Row, Col } from "react-bootstrap";
-
-// Importing ArrowRightCircle icon from react-bootstrap-icons library
 import { ArrowRightCircle } from "react-bootstrap-icons";
-
-// Importing headerImg from the specified path
 import headerImg from "../assets/img/header-img.svg";
 
-// Defining Banner component as a functional component
 export const Banner = () => {
   const [loopNum, setLoopNum] = useState(0);
   const [isDeleting, setIsDeleting] = useState(false);
-  const toRotate = ["Web Developer", "UX/UI Expert", "Front End Programmer"];
+  const toRotate = [
+    "Web Developer",
+    "Frontend Developer",
+    "UX/UI Expert",
+    "User Experience Specialist",
+    "Frontend Engineer",
+    "Web Interface Developer",
+    "Front End Programmer",
+  ];
   const [text, setText] = useState("");
   const [delta, setDelta] = useState(300 - Math.random() * 100);
   const period = 2000;
 
   useEffect(() => {
-    const ticker = setInterval(() => {
-      setDelta(300 - Math.random() * 100); // Changing the state of delta
-    }, period);
+    let ticker = setInterval(() => {
+      tick();
+    }, delta);
 
     return () => {
       clearInterval(ticker); // Clearing the interval on unmount
     };
-  }, [period]);
+  }, [text]);
+
+  const tick = () => {
+    let i = loopNum % toRotate.length;
+    let fullText = toRotate[1];
+  };
 
   // Returning JSX for the Banner component
   return (
