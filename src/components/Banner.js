@@ -80,7 +80,7 @@ export const Banner = () => {
             <h1>
               {" "}
               {/* Heading element */}
-              {`Hi I'm webdecoded`} {/* Static text */}
+              {`Hi! I'm webdecoded `} {/* Static text */}
               <span className="wrap">{text}</span>{" "}
               {/* Span element with class name "wrap" and dynamic content */}
             </h1>
