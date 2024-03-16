@@ -10,6 +10,8 @@ import { NavBar } from "./components/NavBar";
 // Importing the Banner component from the specified path
 import { Banner } from "./components/Banner";
 
+import { Skills } from "./components/Skills";
+
 // Importing Bootstrap CSS styles
 import "bootstrap/dist/css/bootstrap.min.css";
 
@@ -23,6 +25,7 @@ function App() {
       <NavBar />
       {/* Rendering the Banner component */}
       <Banner />
+      <Skills />
     </div>
   );
 }

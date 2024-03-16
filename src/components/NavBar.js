@@ -1,6 +1,8 @@
+import logo from "../assets/img/logo.svg"; // Importing logo image
+
 import { useState, useEffect } from "react"; // Importing React hooks for managing state and side effects
 import { Navbar, Nav, Container } from "react-bootstrap"; // Importing components from React Bootstrap library
-import logo from "../assets/img/logo.svg"; // Importing logo image
+
 import navIcon1 from "../assets/img/nav-icon1.svg"; // Importing navigation icon 1 image
 import navIcon2 from "../assets/img/nav-icon2.svg"; // Importing navigation icon 2 image
 import navIcon3 from "../assets/img/nav-icon3.svg"; // Importing navigation icon 3 image
