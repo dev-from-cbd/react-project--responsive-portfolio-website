@@ -27,5 +27,9 @@ export const Skills = () => {
     },
   };
 
-  return <div>Return</div>;
+  return (
+    <section className="skill" id="skills">
+      Skills
+    </section>
+  );
 };
