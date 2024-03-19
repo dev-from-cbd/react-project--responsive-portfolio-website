@@ -29,7 +29,7 @@ export const Skills = () => {
 
   return (
     <section className="skill" id="skills">
-      Skills
+      <Container>Container</Container>
     </section>
   );
 };
