@@ -34,7 +34,9 @@ export const Skills = () => {
       <Container>
         <Row>
           <Col>
-            <div className="skill-bx">Skill BX</div>
+            <div className="skill-bx">
+              <h2>h2</h2>
+            </div>
           </Col>
         </Row>
       </Container>
