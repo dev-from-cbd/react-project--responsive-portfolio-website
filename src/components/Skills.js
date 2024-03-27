@@ -36,7 +36,7 @@ export const Skills = () => {
           <Col>
             <div className="skill-bx">
               <h2>Skills</h2>
-              <p>P</p>
+              <p>A bit experienced in React JS, JavaScript, CSS3, and HTML5, with a portfolio showcasing projects on GitHub.</p>
             </div>
           </Col>
         </Row>
