@@ -40,7 +40,11 @@ export const Skills = () => {
                 A bit experienced in React JS, JavaScript, CSS3, and HTML5, with
                 a portfolio showcasing projects on GitHub.
               </p>
-              <Carousel responsive={responsive} infinite>
+              <Carousel
+                responsive={responsive}
+                infinite={true}
+                className="slill-slider"
+              >
                 Carousel
               </Carousel>
             </div>
