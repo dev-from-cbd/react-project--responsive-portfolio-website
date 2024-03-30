@@ -45,7 +45,10 @@ export const Skills = () => {
                 infinite={true}
                 className="slill-slider"
               >
-                Carousel
+              <div className="item">React</div>
+              <div className="item">JS</div>
+                <div className="item">CSS3</div>
+                <div className="item">HTML5</div>
               </Carousel>
             </div>
           </Col>
