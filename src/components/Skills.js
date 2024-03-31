@@ -1,12 +1,15 @@
 import { Container, Row, Col } from "react-bootstrap";
 
-//import meter1 from "../assets/img/meter1.svg";
-//import meter2 from "../assets/img/meter2.svg";
-//import meter3 from "../assets/img/meter3.svg";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
-//import arrow1 from "../assets/img/arrow1.svg";
-//import arrow2 from "../assets/img/arrow2.svg";
+
+import meter1 from "../assets/img/meter1.svg";
+import meter2 from "../assets/img/meter2.svg";
+import meter3 from "../assets/img/meter3.svg";
+
+import arrow1 from "../assets/img/arrow1.svg";
+import arrow2 from "../assets/img/arrow2.svg";
+
 //import colorSharp from "../assets/img/color-sharp.png";
 
 export const Skills = () => {
@@ -43,12 +46,24 @@ export const Skills = () => {
               <Carousel
                 responsive={responsive}
                 infinite={true}
-                className="slill-slider"
+                className="skill-slider"
               >
-              <div className="item">React</div>
-              <div className="item">JS</div>
-                <div className="item">CSS3</div>
-                <div className="item">HTML5</div>
+                <div className="item">
+                  <img src={meter1} alt="Web Development" />
+                  <h5>Web Development</h5>
+                </div>
+                <div className="item">
+                  <img src={meter2} alt="Software QA Tester" />
+                  <h5>Software QA Tester</h5>
+                </div>
+                <div className="item">
+                  <img src={meter3} alt="IT Management" />
+                  <h5>IT Management</h5>
+                </div>
+                <div className="item">
+                  <img src={meter2} alt="Digital Marketing" />
+                  <h5>Digital Marketing</h5>
+                </div>
               </Carousel>
             </div>
           </Col>
