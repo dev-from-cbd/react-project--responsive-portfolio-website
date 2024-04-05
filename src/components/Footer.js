@@ -1,3 +1,10 @@
+import { Container } from "react-bootstrap"
+
 export const Footer = () => {
-    return 
+    return (
+        <footer className="footer">
+
+
+        </footer>
+    )
 }
