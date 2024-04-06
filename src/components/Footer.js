@@ -1,10 +1,11 @@
-import { Container } from "react-bootstrap"
+import { Container } from "react-bootstrap";
 
 export const Footer = () => {
-    return (
-        <footer className="footer">
-
-
-        </footer>
-    )
-}
+  return (
+    <footer className="footer">
+      <Container>
+        
+      </Container>
+    </footer>
+  );
+};
