@@ -4,7 +4,9 @@ export const Footer = () => {
   return (
     <footer className="footer">
       <Container>
-        
+        <Row>
+          
+        </Row>
       </Container>
     </footer>
   );
