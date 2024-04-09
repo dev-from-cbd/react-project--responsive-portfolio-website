@@ -1,4 +1,5 @@
 import { Container } from "react-bootstrap";
+import MailchimpSubscribe from "react-mailchimp-subscribe";
 
 export const Footer = () => {
   return (
