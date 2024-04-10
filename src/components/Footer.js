@@ -5,7 +5,9 @@ export const Footer = () => {
   return (
     <footer className="footer">
       <Container>
-        <Row className="align-item-center">align-item-center</Row>
+        <Row className="align-item-center">
+          <MailchimpSubscribe />
+        </Row>
       </Container>
     </footer>
   );
