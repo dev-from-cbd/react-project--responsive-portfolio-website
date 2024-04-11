@@ -7,6 +7,7 @@ export const Footer = () => {
       <Container>
         <Row className="align-item-center">
           <MailchimpSubscribe />
+          <Col sm={6}>Col</Col>
         </Row>
       </Container>
     </footer>
