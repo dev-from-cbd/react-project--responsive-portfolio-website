@@ -11,6 +11,9 @@ export const Footer = () => {
           <Col size={12} sm={6}>
             <img src={logo} alt="Logo" />
           </Col>
+          <Col sm={6}>
+            <img src={logo} alt="Logo" />
+          </Col>
         </Row>
       </Container>
     </footer>
