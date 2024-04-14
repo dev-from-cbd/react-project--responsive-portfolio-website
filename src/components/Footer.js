@@ -12,7 +12,7 @@ export const Footer = () => {
             <img src={logo} alt="Logo" />
           </Col>
           <Col sm={6}>
-            <img src={logo} alt="Logo" />
+            <img src={logo} alt="Logo" className="text-center text-sm-end" />
           </Col>
         </Row>
       </Container>
