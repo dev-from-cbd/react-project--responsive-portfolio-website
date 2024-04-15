@@ -1,14 +1,14 @@
-import { Container, Row, Col, Tab, Nav } from "react-bootstrap";
-import { ProjectCard } from "./ProjectCard";
-import projImg1 from "../assets/img/project-img1.png";
-import projImg2 from "../assets/img/project-img2.png";
-import projImg3 from "../assets/img/project-img3.png";
-import projImg4 from "../assets/img/project-img4.png";
-import projImg5 from "../assets/img/project-img5.png";
-import projImg6 from "../assets/img/project-img6.png";
-import colorSharp2 from "../assets/img/color-sharp2.png";
-import "animate.css";
-import TrackVisibility from "react-on-screen";
+import { Container, Row, Col, Tab, Nav } from "react-bootstrap"; // Importing components from react-bootstrap library for layout creation
+import { ProjectCard } from "./ProjectCard"; // Importing ProjectCard component from local file "./ProjectCard"
+import projImg1 from "../assets/img/project-img1.png"; // Importing projImg1 image from local file
+import projImg2 from "../assets/img/project-img2.png"; // Importing projImg2 image from local file
+import projImg3 from "../assets/img/project-img3.png"; // Importing projImg3 image from local file
+import projImg4 from "../assets/img/project-img4.png"; // Importing projImg4 image from local file
+import projImg5 from "../assets/img/project-img5.png"; // Importing projImg5 image from local file
+import projImg6 from "../assets/img/project-img6.png"; // Importing projImg6 image from local file
+import colorSharp2 from "../assets/img/color-sharp2.png"; // Importing colorSharp2 image from local file
+import "animate.css"; // Importing animation styles from "animate.css" library
+import TrackVisibility from "react-on-screen"; // Importing TrackVisibility component from "react-on-screen" library
 
 export const Projects = () => {
   const projects = [
