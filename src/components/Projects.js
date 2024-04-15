@@ -70,13 +70,13 @@ export const Projects = () => {
                       id="pills-tab"
                     >
                       <Nav.Item>
-                        <Nav.Link eventKey="first">Tab 1</Nav.Link>
+                        <Nav.Link eventKey="first">Portfolio</Nav.Link>
                       </Nav.Item>
                       <Nav.Item>
-                        <Nav.Link eventKey="second">Tab 2</Nav.Link>
+                        <Nav.Link eventKey="second">Technologies</Nav.Link>
                       </Nav.Item>
                       <Nav.Item>
-                        <Nav.Link eventKey="third">Tab 3</Nav.Link>
+                        <Nav.Link eventKey="third">Why choose me</Nav.Link>
                       </Nav.Item>
                     </Nav>
                     <Tab.Content
@@ -99,6 +99,9 @@ export const Projects = () => {
                           and hunting down complex bugs in other people's code
                           when I have plenty of free time for it.
                         </p>
+                      </Tab.Pane>
+                      <Tab.Pane eventKey="second">
+                        <p>React JS, HTML5, CSS3, Bootstrap, etc..</p>
                       </Tab.Pane>
                       <Tab.Pane eventKey="third">
                         <p>
