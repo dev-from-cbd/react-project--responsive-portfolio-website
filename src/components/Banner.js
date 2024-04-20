@@ -6,112 +6,100 @@ import "animate.css";
 import TrackVisibility from "react-on-screen";
 
 export const Banner = () => {
-  // Declaring a functional component named Banner
-  const [loopNum, setLoopNum] = useState(0); // Declaring a state variable loopNum and its setter function
-  const [isDeleting, setIsDeleting] = useState(false); // Declaring a state variable isDeleting and its setter function
-  const toRotate = [
-    // Declaring an array toRotate containing strings
-    "Web Developer",
-    "Frontend Developer",
-    "UX/UI Expert",
-    "User Experience Specialist",
-    "Frontend Engineer",
-    "Web Interface Developer",
-    "Front End Programmer",
-  ];
-  const [text, setText] = useState(""); // Declaring a state variable text and its setter function
-  const [delta, setDelta] = useState(300 - Math.random() * 100); // Declaring a state variable delta and its setter function
-  const period = 2000; // Declaring a constant period with value 2000
+  const [loopNum, setLoopNum] = useState(0);
+  const [isDeleting, setIsDeleting] = useState(false);
+  const [text, setText] = useState("");
+  const [delta, setDelta] = useState(300 - Math.random() * 100);
+  const [index, setIndex] = useState(1);
+  const toRotate = ["Web Developer", "Web Designer", "UI/UX Designer"];
+  const period = 2000;
 
   useEffect(() => {
-    // Declaring a side effect using the useEffect hook
     let ticker = setInterval(() => {
-      // Setting up an interval
-      tick(); // Calling the tick function
+      tick();
     }, delta);
 
     return () => {
-      // Cleaning up the interval
       clearInterval(ticker);
     };
-  }, [text]); // Specifying text as a dependency for the useEffect hook
+  }, [text]);
 
   const tick = () => {
-    // Declaring the tick function
-    let i = loopNum % toRotate.length; // Calculating the index for the toRotate array
-    let fullText = toRotate[i]; // Assigning the string at index i from the toRotate array to the variable fullText
-    let updatedText = isDeleting // Conditionally updating the text
+    let i = loopNum % toRotate.length;
+    let fullText = toRotate[i];
+    let updatedText = isDeleting
       ? fullText.substring(0, text.length - 1)
       : fullText.substring(0, text.length + 1);
 
-    setText(updatedText); // Updating the text state with the updatedText value
+    setText(updatedText);
 
     if (isDeleting) {
-      // Conditionally updating the delta state
       setDelta((prevDelta) => prevDelta / 2);
     }
 
     if (!isDeleting && updatedText === fullText) {
-      // Conditionally updating the isDeleting and delta states
       setIsDeleting(true);
+      setIndex((prevIndex) => prevIndex - 1);
       setDelta(period);
     } else if (isDeleting && updatedText === "") {
-      // Conditionally updating the isDeleting, loopNum, and delta states
       setIsDeleting(false);
       setLoopNum(loopNum + 1);
+      setIndex(1);
       setDelta(500);
+    } else {
+      setIndex((prevIndex) => prevIndex + 1);
     }
   };
 
   return (
-    // Returning JSX for the Banner component
     <section className="banner" id="home">
-      {" "}
-      {/* Section element with class name "banner" and id "home" */}
       <Container>
-        {" "}
-        {/* Container component from React Bootstrap */}
-        <Row className="align-items-center">
-          {" "}
-          {/* Row component with class name "align-items-center" */}
+        <Row className="aligh-items-center">
           <Col xs={12} md={6} xl={7}>
-            {" "}
-            {/* Column component with different breakpoints */}
-            <span className="tagline">Welcome to my Portfolio!!</span>{" "}
-            {/* Span element with class name "tagline" */}
-            <h1>
-              {" "}
-              {/* Heading element */}
-              {`Hi! I'm webdecoded `} {/* Static text */}
-              <span className="wrap">{text}</span>{" "}
-              {/* Span element with class name "wrap" and dynamic content */}
-            </h1>
-            <p>
-              {" "}
-              {/* Paragraph element */}
-              Welcome to my React developer portfolio! I'm passionate about
-              crafting engaging user experiences and building scalable web
-              applications with React.js. With expertise in front-end
-              development and a keen eye for design, I strive to create clean,
-              efficient, and intuitive interfaces. Let's collaborate and bring
-              your ideas to life!
-            </p>
-            <button onClick={() => console.log("connect")}>
-              {" "}
-              {/* Button element with onClick event handler */}
-              Let's connect
-            </button>
+            <TrackVisibility>
+              {({ isVisible }) => (
+                <div
+                  className={
+                    isVisible ? "animate__animated animate__fadeIn" : ""
+                  }
+                >
+                  <span className="tagline">Welcome to my Portfolio</span>
+                  <h1>
+                    {`Hi! I'm Judy`}{" "}
+                    <span
+                      className="txt-rotate"
+                      dataPeriod="1000"
+                      data-rotate='[ "Web Developer", "Web Designer", "UI/UX Designer" ]'
+                    >
+                      <span className="wrap">{text}</span>
+                    </span>
+                  </h1>
+                  <p>
+                    Lorem Ipsum is simply dummy text of the printing and
+                    typesetting industry. Lorem Ipsum has been the industry's
+                    standard dummy text ever since the 1500s, when an unknown
+                    printer took a galley of type and scrambled it to make a
+                    type specimen book.
+                  </p>
+                  <button onClick={() => console.log("connect")}>
+                    Let’s Connect <ArrowRightCircle size={25} />
+                  </button>
+                </div>
+              )}
+            </TrackVisibility>
           </Col>
           <Col xs={12} md={6} xl={5}>
-            {" "}
-            {/* Column component with different breakpoints */}
-            <img src={headerImg} alt="Header Image" />{" "}
-            {/* Image element with src and alt attributes */}
-            <a href="#">
-              {" "}
-              {/* Anchor element */}
-              <ArrowRightCircle /> {/* ArrowRightCircle icon component */}
-            </a>
+            <TrackVisibility>
+              {({ isVisible }) => (
+                <div
+                  className={
+                    isVisible ? "animate__animated animate__zoomIn" : ""
+                  }
+                >
+                  <img src={headerImg} alt="Header Img" />
+                </div>
+              )}
+            </TrackVisibility>
           </Col>
         </Row>
       </Container>
