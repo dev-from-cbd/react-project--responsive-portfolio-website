@@ -1,7 +1,9 @@
-import { useState, useEffect } from "react"; // Importing necessary hooks from React
-import { Container, Row, Col } from "react-bootstrap"; // Importing layout components from React Bootstrap
-import { ArrowRightCircle } from "react-bootstrap-icons"; // Importing an icon component from React Bootstrap Icons
-import headerImg from "../assets/img/header-img.svg"; // Importing an image asset
+import { useState, useEffect } from "react";
+import { Container, Row, Col } from "react-bootstrap";
+import headerImg from "../assets/img/header-img.svg";
+import { ArrowRightCircle } from "react-bootstrap-icons";
+import "animate.css";
+import TrackVisibility from "react-on-screen";
 
 export const Banner = () => {
   // Declaring a functional component named Banner
